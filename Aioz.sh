@@ -30,10 +30,10 @@ echo "正在生成新的助记词和私钥..."
 ./aioznode keytool new --save-priv-key privkey.json
 
 echo "=============================备份好钱包和助记词，下方需要使用==================================="
-echo "=============================Make sure to backup your wallet and mnemonic phrase, it will be needed below==================================="
+
 
 # 确认备份
-read -p "是否已经备份好助记词? (y/n) " backup_confirmed
+read -p "是否已经备份好钱包和助记词? (y/n) " backup_confirmed
 if [ "$backup_confirmed" != "y" ]; then
         echo "请先备份好助记词,然后再继续执行脚本"
         exit 1
