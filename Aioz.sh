@@ -67,7 +67,7 @@ read -p "请输入钱包地址: " wallet_address
 read -p "请输入提取数量: " math
 ./aioznode reward withdraw --address $wallet_address --amount ${math}aioz --priv-key-file privkey.json
 
-
+}
 # 主菜单
 function main_menu() {
     while true; do
