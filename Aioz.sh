@@ -80,7 +80,7 @@ function main_menu() {
         1) install_node ;;
         2) check_status ;;
         3) reward balance ;;
-        *) e) check_status ;;cho "无效选项。" ;;
+        *) echo "无效选项。" ;;
         esac
         echo "按任意键返回主菜单..."
         read -n 1
