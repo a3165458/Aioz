@@ -41,10 +41,11 @@ fi
 
 # 使用指定的家目录和私钥文件运行节点
 echo "正在启动AIOZ dCDN CLI节点..."
-screen -dmS ./aioznode start --home nodedata --priv-key-file privkey.json
+screen -dmS aioznode ./aioznode start --home nodedata --priv-key-file privkey.json
+
 
 # 提醒用户关于自动更新和权限设置的注意事项
-echo "后续使用screen 查看运行情况。"
+echo "后续使用screen -r aioznode查看运行情况。"
 
 }
 
