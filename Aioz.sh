@@ -41,11 +41,10 @@ fi
 
 # 使用指定的家目录和私钥文件运行节点
 echo "正在启动AIOZ dCDN CLI节点..."
-./aioznode start --home nodedata --priv-key-file privkey.json
+screen -dmS ./aioznode start --home nodedata --priv-key-file privkey.json
 
 # 提醒用户关于自动更新和权限设置的注意事项
-echo "请记得设置可执行文件的写权限以便自动更新。"
-echo "考虑使用'launchctl'（适用于macOS）或'systemctl'（适用于Linux）来管理在更新后和系统启动时自动重新启动。"
+echo "后续使用screen 查看运行情况。"
 
 }
 
