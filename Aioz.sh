@@ -10,6 +10,9 @@ fi
 # 节点安装功能
 function install_node() {
 
+apt update
+apt install screen -y
+
 # 下载AIOZ dCDN CLI节点的压缩包
 echo "正在下载AIOZ dCDN CLI节点..."
 curl -LO https://github.com/AIOZNetwork/aioz-dcdn-cli-node/files/13561211/aioznode-linux-amd64-1.1.0.tar.gz
@@ -79,7 +82,7 @@ function main_menu() {
         case $OPTION in
         1) install_node ;;
         2) check_status ;;
-        3) reward balance ;;
+        3) reward_balance ;;
         *) echo "无效选项。" ;;
         esac
         echo "按任意键返回主菜单..."
