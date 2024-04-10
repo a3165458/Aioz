@@ -56,7 +56,7 @@ function check_status() {
 }
 
 function reward_balance() {
-./aioznode reward
+./aioznode reward balance
 
 }
 
