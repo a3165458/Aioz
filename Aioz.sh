@@ -82,7 +82,7 @@ function main_menu() {
         echo "2. 查看节点状态"
         echo "3. 查看收益"
         echo "4. 领取收益"
-        read -p "请输入选项（1-3）: " OPTION
+        read -p "请输入选项（1-4）: " OPTION
 
         case $OPTION in
         1) install_node ;;
