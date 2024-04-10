@@ -56,9 +56,9 @@ function check_status() {
 }
 
 function reward_balance() {
-./aioznode reward balance
-
+    ./aioznode reward balance
 }
+
 
 
 # 主菜单
